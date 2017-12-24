@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 
 @Component({
-  selector: 'app-student-application-form',
+  selector: 'app-student-form',
   templateUrl: './student-application-form.component.html',
   styleUrls: ['./student-application-form.component.css']
 })
