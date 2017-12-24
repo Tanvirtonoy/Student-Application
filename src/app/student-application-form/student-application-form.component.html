@@ -1,0 +1,16 @@
+
+<h1>Student Application Form</h1>
+
+<h3>Please Fill in the following information</h3>
+
+<form>
+  <div>
+    <label for="division">
+      <select class="form-control" id="division" required
+              [(ngModel)]="model.division" name="division"
+              #division="ngModel">
+        <option *ngFor="let divis of divisions" 
+          value="divis">{{divis}}</option></select>
+    </label>
+  </div>
+</form>
