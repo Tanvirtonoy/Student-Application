@@ -5,12 +5,12 @@
 
 <form>
   <div>
-    <label for="level">
-      <select class="form-control" id="level" required
-              [(ngModel)]="model.level" name="level"
+    <label for="division">
+      <select class="form-control" id="division" required
+              [(ngModel)]="model.division" name="division"
               #division="ngModel">
-        <option *ngFor="let level of levels" 
-          value="level">{{level}}</option></select>
+        <option *ngFor="let divis of divisions" 
+          value="divis">{{divis}}</option></select>
     </label>
   </div>
 </form>
