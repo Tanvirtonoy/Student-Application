@@ -6,12 +6,14 @@ import { AppComponent } from './app.component';
 import { StudentApplicationFormComponent } from './student-application-form/student-application-form.component';
 import { AppRoutingModule } from './app-routing.module';
 import { SchoolAuthorityComponent } from './school-authority/school-authority.component';
+import { AdmitCardComponent } from './admit-card/admit-card.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     StudentApplicationFormComponent,
-    SchoolAuthorityComponent
+    SchoolAuthorityComponent,
+    AdmitCardComponent
   ],
   imports: [
     BrowserModule,
