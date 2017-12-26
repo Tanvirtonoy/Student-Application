@@ -1,10 +1,12 @@
 <h2>SMS and WEB based school admission system</h2>
-<div class="header-bar">My new app</div>
+<div class="header-bar"></div>
 <nav>
-  <a href="#">Admission Circular</a>
-  <a href="#">Circular for Dhaka</a>
-  <a href="#">Student Application Form</a>
-  <a href="#">Get Admit Card</a>
-  <a href="#">School/Authority Login</a>
-  <a href="#">Software User Manual</a>
+  <!-- <a routerLink="" routerLinkActive="active">Admission Circular</a>
+  <a routerLink="" routerLinkActive="active">Circular for Dhaka</a> -->
+  <a routerLink="/form" routerLinkActive="active">Student Application Form</a>
+  <!-- <a routerLink="" routerLinkActive="active">Get Admit Card</a> -->
+  <a routerLink="/school-authority-login" routerLinkActive="active">School/Authority Login</a>
+  <!-- <a routerLink="" routerLinkActive="active">Software User Manual</a> -->
 </nav>
+
+<router-outlet></router-outlet>

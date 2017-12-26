@@ -5,12 +5,38 @@
 
 <form>
   <div>
-    <label for="level">
-      <select class="form-control" id="level" required
-              [(ngModel)]="model.level" name="level"
-              #division="ngModel">
+    <label for="level">Level:
+      <select class="form-control" id="level" required name="level">
         <option *ngFor="let level of levels" 
           value="level">{{level}}</option></select>
+    </label>
+  </div><br>
+
+  <div>
+    <label for="school">Preferred School:
+      <select class="form-control" id="school" required name="school">
+        <option *ngFor="let school of schools" 
+          value="school">{{school}}</option></select>
+    </label>
+  </div><br><br>
+  <!-- <div [hidden]="level.valid || level.pristine" class="alert alert-danger">
+    Level is required
+  </div> -->
+
+  <div>
+    <label for="father">Father's Name:
+      <input name="father-name" ngModel>
+    </label>
+    <label for="father">Father's Occupation:
+      <input name="father-occupation" ngModel>
+    </label>
+  </div><br>
+  <div>
+    <label for="mother">Mother's Name:
+      <input name="mother-name" ngModel>
+    </label>
+    <label for="mother">Mother's Occupation:
+      <input name="mother-occupation" ngModel>
     </label>
   </div>
 </form>
